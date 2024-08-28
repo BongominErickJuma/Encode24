@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Encode | Enlightening Code!</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      .register input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .register input:focus,
+      .register input:active {
+        outline: none;
+        border: 1px solid #388da8;
+      }
+      .register .attend-btn {
+        background-color: #388da8;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: calc(100% - 20px);
+      }
+      .register.attend-btn:hover {
+        background-color: #3683b4;
+      }
+      .register h1 {
+        color: #388da8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center index-page">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <div class="logo">
+          <h1>
+            <a href="index.html"
+              ><span>ENCODE<sup>'24</sup></span></a
+            >
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+            <li class="dropdown">
+              <a href="#"><span>Pannelists</span> </a>
+              <ul>
+                <li><a href="#">Day One</a></li>
+                <li><a href="#">Day Two</a></li>
+                <li><a href="#">Hackathon</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#"><span>Booths and Stands</span> </a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto">Volunteer</a></li>
+            <li class="contact">
+              <a class="nav-link scrollto" href="">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+      <div class="container-fluid text-center">
+        <video autoplay muted loop id="bg-video">
+          <source src="assets/videos/bg video.mov" type="video/mp4" />
+        </video>
+        <div
+          id="word-container"
+          class="d-flex justify-content-center align-items-center mt-5 pt-5"
+        ></div>
+      </div>
+    </section>
+
+    <main id="main">
+      <div class="mt-5 pt-5">
+        <div
+          id="about-us-bottom"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <div
+            class="container dynamic-text-bottom text-center"
+            data-aos="fade-up"
+          >
+            <hr class="mx-5 line line-one" />
+            <h3
+              id="dynamic-text-bottom"
+              class="fw-light"
+              style="line-height: 1.5"
+            >
+              <span>Encode'24</span> is the inaugural event in a series of
+              annual gatherings spearheaded by Cognosphere Dynamics LLC,
+              designed to unite leading minds in science, technology, and
+              entrepreneurship.This event serves as a platform for
+              innovation,collaboration, and knowledge exchange, bringing
+              together professionals from diverse fields to explore cutting-edge
+              technologies and their practical applications. With a focus on
+              solving real-world challenges and shaping the future of
+              entrepreneurship and technology, Encode'24 aims to empower
+              innovators and inspire transformative solutions that drive
+              societal progress, particularly within Africa and across the
+              globe.
+            </h3>
+            <hr class="mx-5 line line-two" />
+          </div>
+        </div>
+      </div>
+      <section id="team" class="team container">
+        <div
+          class="d-flex align-items-start justify-content-around flex-column flex-md-row"
+        >
+          <div class="member">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic pic1"></div>
+              <div class="member-info">
+                <h1 data-aos="fade-up" data-aos-delay="400">Impact.</h1>
+                <h1 class="matrix" data-aos="fade-up" data-aos-delay="400">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="75"
+                    data-purecounter-duration="5"
+                    class="purecounter"
+                  ></span
+                  >%
+                </h1>
+                <h4 data-aos="fade-up" data-aos-delay="400">
+                  say TED has impacted their lives.
+                </h4>
+                <p data-aos="fade-up" data-aos-delay="400">
+                  We’re many things to many people: globally recognized
+                  storyteller, landmark events and conferences hub, and media
+                  powerhouse.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic pic2"></div>
+              <div class="member-info">
+                <h1 data-aos="fade-up" data-aos-delay="400">Trust.</h1>
+                <h1 class="matrix" data-aos="fade-up" data-aos-delay="400">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="9"
+                    data-purecounter-duration="5"
+                    class="purecounter"
+                  ></span
+                  >/10
+                </h1>
+                <h4 data-aos="fade-up" data-aos-delay="400">
+                  view TED as a trusted brand.
+                </h4>
+                <p data-aos="fade-up" data-aos-delay="400">
+                  We uphold the highest editorial standards to continually earn
+                  our audience's trust and respect.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="member" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic pic3"></div>
+              <div class="member-info">
+                <h1 data-aos="fade-up" data-aos-delay="400">Value.</h1>
+                <h1 class="matrix" data-aos="fade-up" data-aos-delay="400">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="2"
+                    data-purecounter-duration="6"
+                    class="purecounter"
+                  ></span
+                  >/3
+                </h1>
+                <h4 data-aos="fade-up" data-aos-delay="400">
+                  feel our partners share our values.
+                </h4>
+                <p data-aos="fade-up" data-aos-delay="400">
+                  Our value comes from a mission to share the best ideas from
+                  around the world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="team" class="team container">
+        <div
+          class="d-flex align-items-start justify-content-around flex-column flex-md-row"
+        >
+          <div class="member">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="pic pic1"></div>
+              <div class="member-info">
+                <h1 data-aos="fade-up" data-aos-delay="400">Impact.</h1>
+                <h1 class="matrix" data-aos="fade-up" data-aos-delay="400">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="75"
+                    data-purecounter-duration="5"
+                    class="purecounter"
+                  ></span
+                  >%
+                </h1>
+                <h4 data-aos="fade-up" data-aos-delay="400">
+                  say TED has impacted their lives.
+                </h4>
+                <p data-aos="fade-up" data-aos-delay="400">
+                  We’re many things to many people: globally recognized
+                  storyteller, landmark events and conferences hub, and media
+                  powerhouse.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <div class="pic pic2"></div>
+              <div class="member-info">
+                <h1 data-aos="fade-up" data-aos-delay="400">Trust.</h1>
+                <h1 class="matrix" data-aos="fade-up" data-aos-delay="400">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="9"
+                    data-purecounter-duration="5"
+                    class="purecounter"
+                  ></span
+                  >/10
+                </h1>
+                <h4 data-aos="fade-up" data-aos-delay="400">
+                  view TED as a trusted brand.
+                </h4>
+                <p data-aos="fade-up" data-aos-delay="400">
+                  We uphold the highest editorial standards to continually earn
+                  our audience's trust and respect.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="member" data-aos="zoom-in" data-aos-delay="400">
+              <div class="pic pic3"></div>
+              <div class="member-info">
+                <h1 data-aos="fade-up" data-aos-delay="400">Value.</h1>
+                <h1 class="matrix" data-aos="fade-up" data-aos-delay="400">
+                  <span
+                    data-purecounter-start="0"
+                    data-purecounter-end="2"
+                    data-purecounter-duration="6"
+                    class="purecounter"
+                  ></span
+                  >/3
+                </h1>
+                <h4 data-aos="fade-up" data-aos-delay="400">
+                  feel our partners share our values.
+                </h4>
+                <p data-aos="fade-up" data-aos-delay="400">
+                  Our value comes from a mission to share the best ideas from
+                  around the world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="details" class="details">
+        <div class="container">
+          <div class="section-title mb-3" data-aos="fade-up">
+            <h1 class="text-center mb-3">Global ad solutions</h1>
+          </div>
+          <div class="row content mt-5">
+            <div
+              class="col-12 col-md-6 order-1 order-md-2"
+              data-aos="fade-left"
+            >
+              <img src="assets/img/Capture.PNG" class="img-fluid" alt="" />
+            </div>
+            <div class="col-12 col-md-6 order-2 order-md-1">
+              <div class="px-3" style="width: 350px">
+                <h3 data-aos="fade" data-aos-delay="500">
+                  Leveraging TED’s storytelling expertise and global reach to
+                  create highly impactful campaigns.
+                </h3>
+                <p class="lead">
+                  We provide partners with a full-service team—strategists,
+                  account managers, creatives, producers, designers, editors,
+                  and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <div
+            class="d-flex align-items-center justify-content-around flex-column flex-md-row"
+          >
+            <div class="gallery-item m-3 rounded">
+              <a
+                href="assets/img/gallery/gallery-1.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/gallery/gallery-1.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <p>Podcasts</p>
+            </div>
+            <div class="gallery-item m-3 rounded">
+              <a
+                href="assets/img/gallery/gallery-2.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/gallery/gallery-2.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <p>Media</p>
+            </div>
+            <div class="gallery-item m-3 rounded">
+              <a
+                href="assets/img/gallery/gallery-3.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/gallery/gallery-3.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <p>Custom events</p>
+            </div>
+          </div>
+          <div
+            class="d-flex align-items-center justify-content-around flex-column flex-md-row"
+          >
+            <div class="gallery-item m-3 rounded">
+              <a
+                href="assets/img/gallery/gallery-4.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/gallery/gallery-4.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <p>Content collaborations</p>
+            </div>
+            <div class="gallery-item m-3 rounded">
+              <a
+                href="assets/img/gallery/gallery-5.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/gallery/gallery-5.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <p>Conferences</p>
+            </div>
+            <div class="gallery-item m-3 rounded">
+              <a
+                href="assets/img/gallery/gallery-6.jpg"
+                class="gallery-lightbox"
+              >
+                <img
+                  src="assets/img/gallery/gallery-6.jpg"
+                  alt=""
+                  class="img-fluid"
+                />
+              </a>
+              <p>Communication training</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="mt-5 pt-5">
+        <div
+          id="about-us-bottom"
+          class="d-flex justify-content-center align-items-center"
+        >
+          <div
+            class="container dynamic-text-bottom text-center"
+            data-aos="fade-up"
+          >
+            <hr class="mx-5 line line-one" />
+            <h1 id="dynamic-text-bottom">
+              Join us as a sponsor of Encode 2024 and help shape the future of
+              technology and entrepreneurship while gaining unparalleled
+              exposure and impact in the global innovation landscape.
+            </h1>
+            <a href="/packages.html" class="btn btn-get-started"
+              >Explore Packages >>></a
+            >
+            <hr class="mx-5 line line-two" />
+          </div>
+        </div>
+      </div>
+
+      <section id="clients" class="clients section container">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-2.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-3.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-4.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-5.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-6.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-2.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-3.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-4.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-5.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-6.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-2.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-3.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-4.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-5.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-6.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-2.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-3.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-4.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-5.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+
+            <div class="col-xl-2 col-md-3 col-6 client-logo">
+              <img
+                src="assets/img/clients/client-6.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <!-- End Client Item -->
+          </div>
+
+          <div class="row gy-4 mt-5"></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="mt-5 pt-5">
+          <div
+            class="container d-flex justify-content-center align-items-center register"
+          >
+            <form action="/attendee" class="w-100">
+              <h1 class="text-left mb-3">I will attend</h1>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Fullname"
+                required
+              />
+              <input
+                type="text"
+                name="profession"
+                placeholder="Profession"
+                required
+              />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Phone Number"
+                required
+              />
+
+              <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                required
+              />
+
+              <button type="submit" class="attend-btn">Register now</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    <footer class="footer my-5" id="footer ">
+      <div
+        class="d-flex align-items-center justify-content-between container-fluid flex-column flex-md-row"
+      >
+        <div class="left-item px-3 order-2 order-lg-1">
+          <p class="fw-bold">
+            <a href="#">Encode</a>|<a href="#">Code Of Conduct</a>
+          </p>
+          <p class="fw-bold">© 2024 Cognosphere Dynamics, LLC</p>
+        </div>
+        <div class="rignt-item px-3 order-1 order-lg-2">
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+          <p class="mt-4">
+            <a href="#">download our general offerings desk</a>
+          </p>
+          <p class="mt-2"><a href="#">download our media kit</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <div id="preloader"></div>
+
+    <script>
+      const words = [
+        `<h1 class="fw-light"  data-aos="fade-up">
+            <span>Rethink</span>
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="350">
+            complex
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="700">
+            problems
+          </h1>`,
+        `<h1 class="fw-light" data-aos="fade-up">
+            <span>Unearth</span>
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="350">
+            compelling
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="700">
+            stories
+          </h1>`,
+        `
+          <h1 class="fw-light" data-aos="fade-up">
+            <span>Share</span>
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="350">
+            a
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="700">
+            new
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="1050">
+            mission
+          </h1>`,
+        `
+          <h1 class="fw-light" data-aos="fade-up">
+            <span>Capture</span>
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="350">
+            new
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="700">
+            insights
+          </h1>`,
+        ` <h1 class="fw-light" data-aos="fade-up">
+            <span>Reach</span>
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="350">
+            an
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="700">
+            engaged
+          </h1>
+          <h1 class="fw-light ms-3" data-aos="fade-up" data-aos-delay="1050">
+            audience
+          </h1>`,
+      ];
+
+      const wordContainer = document.getElementById("word-container");
+
+      let i = 0;
+      setInterval(() => {
+        wordContainer.innerHTML = words[i];
+        i++;
+        if (i >= words.length) {
+          i = 0;
+        }
+      }, 5000);
+    </script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

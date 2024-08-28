@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Company Dashboard</title>
+    <style>
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h2 {
+        color: #555;
+      }
+      .section input,
+      .section select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .section button {
+        padding: 10px 15px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .section button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Company Dashboard</h1>
+
+      <!-- View Profile Section -->
+      <div class="section" id="view-profile">
+        <h2>View Company Profile</h2>
+        <p><strong>Organization Name:</strong> Example Company</p>
+        <p><strong>Email Address:</strong> contact@example.com</p>
+        <p><strong>Contact Number:</strong> +1234567890</p>
+      </div>
+
+      <!-- Edit Profile Section -->
+      <div class="section" id="edit-profile">
+        <h2>Edit Company Profile</h2>
+        <form action="/update-profile" method="post">
+          <input
+            type="text"
+            name="organization_name"
+            placeholder="Organization Name"
+            value="Example Company"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            value="contact@example.com"
+            required
+          />
+          <input
+            type="text"
+            name="contact_number"
+            placeholder="Contact Number"
+            value="+1234567890"
+            required
+          />
+          <button type="submit">Update Profile</button>
+        </form>
+      </div>
+
+      <!-- Preferred Communication Section -->
+      <div class="section" id="communication-preferences">
+        <h2>Preferred Communication</h2>
+        <form action="/update-communication" method="post">
+          <label for="communication_method">Preferred Method:</label>
+          <select name="communication_method" id="communication_method">
+            <option value="email" selected>Email</option>
+            <option value="phone">Phone</option>
+            <option value="mail">Mail</option>
+          </select>
+          <button type="submit">Update Preferences</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

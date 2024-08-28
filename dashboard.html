@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Encode | Sponsor Packages</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      .nav-link {
+        color: #303030 !important;
+      }
+      h1 {
+        text-align: center;
+        color: #388da8;
+      }
+      .section {
+        margin-bottom: 20px;
+      }
+      .section h2 {
+        color: #388da8;
+      }
+      .section input,
+      .section select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      input:focus,
+      input:active {
+        outline: none;
+        border: 1px solid #388da8;
+      }
+      .section button {
+        padding: 10px 15px;
+        width: 100%;
+        border: none;
+        background-color: #388da8;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .section button:hover {
+        background-color: #3683b4;
+      }
+
+      .dropzone {
+        border-radius: 8px;
+        border: 1px dashed #ddd;
+        padding: 20px;
+        width: 100%;
+        height: clamp(150px, 20vh, 200px);
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        margin-bottom: 10px;
+      }
+
+      .dropzone img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center border py-3">
+      <div
+        class="container-fluid d-flex align-items-center justify-content-between"
+      >
+        <div class="logo">
+          <h1>
+            <a href="index.html" class="nav-link"
+              ><span>ENCODE<sup>'24</sup></span></a
+            >
+          </h1>
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+        </div>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+            <li><a class="nav-link scrollto" href="/index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#" class="nav-link"><span>Pannelists</span> </a>
+              <ul>
+                <li><a href="#">Day One</a></li>
+                <li><a href="#">Day Two</a></li>
+                <li><a href="#">Hackathon</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#" class="nav-link"><span>Booths and Stands</span> </a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li><a href="#">Drop Down 3</a></li>
+                <li><a href="#">Drop Down 4</a></li>
+              </ul>
+            </li>
+            <li><a class="nav-link scrollto">Volunteer</a></li>
+            <li class="contact">
+              <a class="nav-link scrollto" href="">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <main id="main">
+      <div class="mt-5 pt-5"></div>
+      <div class="container">
+        <h1>Company Dashboard</h1>
+
+        <!-- View Profile Section -->
+        <div class="section" id="view-profile">
+          <h2>View Company Profile</h2>
+          <p><strong>Organization Name:</strong> Example Company</p>
+          <p><strong>Email Address:</strong> contact@example.com</p>
+          <p><strong>Contact Number:</strong> +1234567890</p>
+        </div>
+
+        <!-- Edit Profile Section -->
+        <div class="section" id="edit-profile">
+          <h2>Edit Company Profile</h2>
+          <form action="/update-profile">
+            <input
+              type="text"
+              name="organization_name"
+              placeholder="Organization Name"
+              value="Example Company"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              value="contact@example.com"
+              required
+            />
+            <input
+              type="text"
+              name="contact_number"
+              placeholder="Contact Number"
+              value="+1234567890"
+              required
+            />
+
+            <div id="dropzone" class="dropzone">
+              <p>Drag and drop your logo here or click to select a file</p>
+              <input
+                type="file"
+                id="fileInput"
+                name="image"
+                accept="image/*"
+                style="display: none"
+              />
+              <img
+                id="preview"
+                src=""
+                alt="Image preview"
+                style="display: none"
+              />
+            </div>
+            <button type="submit">Update Profile</button>
+          </form>
+        </div>
+
+        <!-- Preferred Communication Section -->
+        <div class="section" id="communication-preferences">
+          <h2>Preferred Communication</h2>
+          <form action="/update-communication" method="post">
+            <label for="communication_method">Preferred Method:</label>
+            <select name="communication_method" id="communication_method">
+              <option value="email" selected>Email</option>
+              <option value="phone">Phone</option>
+              <option value="mail">Mail</option>
+            </select>
+            <button type="submit">Update Preferences</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    <footer class="footer my-5" id="footer ">
+      <div
+        class="d-flex align-items-center justify-content-between container-fluid flex-column flex-md-row"
+      >
+        <div class="left-item px-3 order-2 order-lg-1">
+          <p class="fw-bold">
+            <a href="#">Encode</a>|<a href="#">Code Of Conduct</a>
+          </p>
+          <p class="fw-bold">© 2024 Cognosphere Dynamics, LLC</p>
+        </div>
+        <div class="rignt-item px-3 order-1 order-lg-2">
+          <div class="social">
+            <a href=""><i class="bi bi-twitter"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+          <p class="mt-4">
+            <a href="#">download our general offerings desk</a>
+          </p>
+          <p class="mt-2"><a href="#">download our media kit</a></p>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <div id="preloader"></div>
+
+    <script>
+      const dropzone = document.getElementById("dropzone");
+      const fileInput = document.getElementById("fileInput");
+      const preview = document.getElementById("preview");
+
+      // Open file dialog when dropzone is clicked
+      dropzone.addEventListener("click", () => fileInput.click());
+
+      // Handle file input change
+      fileInput.addEventListener("change", handleFileSelect);
+
+      // Handle drag over
+      dropzone.addEventListener("dragover", (event) => {
+        event.preventDefault(); // Prevent default behavior (Prevent file from being opened)
+        dropzone.style.borderColor = "#333"; // Change border color on drag over
+      });
+
+      // Handle drag leave
+      dropzone.addEventListener("dragleave", () => {
+        dropzone.style.borderColor = "#ccc"; // Reset border color when drag leaves
+      });
+
+      // Handle drop
+      dropzone.addEventListener("drop", (event) => {
+        event.preventDefault();
+        dropzone.style.borderColor = "#ccc"; // Reset border color after drop
+        const file = event.dataTransfer.files[0];
+        if (file) {
+          handleFile(file);
+        }
+      });
+
+      // Handle file select
+      function handleFileSelect(event) {
+        const file = event.target.files[0];
+        if (file) {
+          handleFile(file);
+        }
+      }
+
+      // Handle file and preview image
+      function handleFile(file) {
+        const reader = new FileReader();
+        reader.onload = function (event) {
+          preview.src = event.target.result;
+          preview.style.display = "block";
+        };
+        reader.readAsDataURL(file);
+      }
+    </script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
