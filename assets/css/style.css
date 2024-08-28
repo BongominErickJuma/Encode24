@@ -708,58 +708,18 @@ section {
 # About
 --------------------------------------------------------------*/
 
-#about-us {
-  height: 100dvh;
-}
-
-#dynamic-text span {
-  display: block;
-  /* line-height: 0.5; */
-}
-
-#dynamic-text {
-  position: relative;
-}
-
-#dynamic-text::before,
-#dynamic-text::after {
-  content: "";
-  width: 0;
-  height: 0.25rem;
-  display: inline-block;
-  background: var(--accent-color);
-  transform: translateX(-50%);
-  transition: width 2s ease-out;
-}
-
-#dynamic-text::before {
-  position: absolute;
-  top: -3rem;
-}
-
-#dynamic-text::after {
-  position: absolute;
-  bottom: 0;
-}
-
-#dynamic-text.animate::before {
-  width: 100%;
-  transition-delay: 0.5s;
-}
-
-#dynamic-text.animate::after {
-  width: 100%;
-  transition-delay: 1s;
-}
-
 /* bottom one */
 #about-us-bottom {
-  position: relative;
   text-align: left;
 }
 
 #about-us-bottom h1 {
   font-size: clamp(1.5rem, 2.5vw, 3rem);
+}
+
+#about-us-bottom span {
+  color: var(--accent-color);
+  font-weight: bold !important;
 }
 hr.line {
   border: 1px solid var(--accent-color);
