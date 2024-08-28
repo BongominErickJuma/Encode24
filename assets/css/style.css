@@ -178,6 +178,7 @@ h6 {
   color: var(--background-color);
   text-decoration: none;
 }
+
 #header.header-scrolled .logo h1 a,
 #header.header-scrolled .logo h1 a:hover {
   color: var(--heading-color);
