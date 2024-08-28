@@ -67,6 +67,16 @@
       .register h1 {
         color: #388da8;
       }
+      .package-btn {
+        background-color: #388da8;
+        color: #fff;
+        border: none;
+        display: block;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100% !important;
+      }
     </style>
   </head>
 
@@ -132,39 +142,40 @@
     </section>
 
     <main id="main">
-      <div class="mt-5 pt-5">
+      <div
+        id="about-us-bottom"
+        class="d-flex justify-content-center align-items-center"
+      >
         <div
-          id="about-us-bottom"
-          class="d-flex justify-content-center align-items-center"
+          class="container dynamic-text-bottom text-center"
+          data-aos="fade-up"
         >
-          <div
-            class="container dynamic-text-bottom text-center"
-            data-aos="fade-up"
+          <hr class="mx-5 line line-one" />
+          <h3
+            id="dynamic-text-bottom"
+            class="fw-light"
+            style="line-height: 1.5"
           >
-            <hr class="mx-5 line line-one" />
-            <h3
-              id="dynamic-text-bottom"
-              class="fw-light"
-              style="line-height: 1.5"
-            >
-              <span>Encode'24</span> is the inaugural event in a series of
-              annual gatherings spearheaded by Cognosphere Dynamics LLC,
-              designed to unite leading minds in science, technology, and
-              entrepreneurship.This event serves as a platform for
-              innovation,collaboration, and knowledge exchange, bringing
-              together professionals from diverse fields to explore cutting-edge
-              technologies and their practical applications. With a focus on
-              solving real-world challenges and shaping the future of
-              entrepreneurship and technology, Encode'24 aims to empower
-              innovators and inspire transformative solutions that drive
-              societal progress, particularly within Africa and across the
-              globe.
-            </h3>
-            <hr class="mx-5 line line-two" />
-          </div>
+            <span>Encode'24</span> is the inaugural event in a series of annual
+            gatherings spearheaded by Cognosphere Dynamics LLC, designed to
+            unite leading minds in science, technology, and
+            entrepreneurship.This event serves as a platform for
+            innovation,collaboration, and knowledge exchange, bringing together
+            professionals from diverse fields to explore cutting-edge
+            technologies and their practical applications. With a focus on
+            solving real-world challenges and shaping the future of
+            entrepreneurship and technology, Encode'24 aims to empower
+            innovators and inspire transformative solutions that drive societal
+            progress, particularly within Africa and across the globe.
+          </h3>
+          <hr class="mx-5 line line-two" />
         </div>
       </div>
+
       <section id="team" class="team container">
+        <div class="section-title mb-3" data-aos="fade-up">
+          <h1 class="text-center mb-3">Team</h1>
+        </div>
         <div
           class="d-flex align-items-start justify-content-around flex-column flex-md-row"
         >
@@ -249,7 +260,7 @@
         <div
           class="d-flex align-items-start justify-content-around flex-column flex-md-row"
         >
-          <div class="member">
+          <div class="member" data-aos="fade-up">
             <div class="member" data-aos="zoom-in" data-aos-delay="200">
               <div class="pic pic1"></div>
               <div class="member-info">
@@ -357,7 +368,10 @@
       </section>
 
       <section id="gallery" class="gallery">
-        <div class="container">
+        <div class="section-title mb-3" data-aos="fade-up">
+          <h1 class="text-center mb-3">Gallery</h1>
+        </div>
+        <div class="container" data-aos="fade-up">
           <div
             class="d-flex align-items-center justify-content-around flex-column flex-md-row"
           >
@@ -447,30 +461,31 @@
         </div>
       </section>
 
-      <div class="mt-5 pt-5">
+      <div
+        id="about-us-bottom"
+        class="d-flex justify-content-center align-items-center"
+      >
         <div
-          id="about-us-bottom"
-          class="d-flex justify-content-center align-items-center"
+          class="container dynamic-text-bottom text-center"
+          data-aos="fade-up"
         >
-          <div
-            class="container dynamic-text-bottom text-center"
-            data-aos="fade-up"
+          <hr class="mx-5 line line-one" />
+          <h1 id="dynamic-text-bottom" class="mb-5">
+            Join us as a sponsor of Encode 2024 and help shape the future of
+            technology and entrepreneurship while gaining unparalleled exposure
+            and impact in the global innovation landscape.
+          </h1>
+
+          <a href="/packages.html" class="package-btn w-100"
+            >Explore Packages >>></a
           >
-            <hr class="mx-5 line line-one" />
-            <h1 id="dynamic-text-bottom">
-              Join us as a sponsor of Encode 2024 and help shape the future of
-              technology and entrepreneurship while gaining unparalleled
-              exposure and impact in the global innovation landscape.
-            </h1>
-            <a href="/packages.html" class="btn btn-get-started"
-              >Explore Packages >>></a
-            >
-            <hr class="mx-5 line line-two" />
-          </div>
         </div>
       </div>
 
-      <section id="clients" class="clients section container">
+      <section id="clients" class="clients section container mt-5">
+        <div class="section-title mb-3" data-aos="fade-up">
+          <h1 class="text-center mb-3">Our Partners</h1>
+        </div>
         <div class="container" data-aos="fade-up">
           <div class="row">
             <div class="col-xl-2 col-md-3 col-6 client-logo">
@@ -686,18 +701,19 @@
             </div>
             <!-- End Client Item -->
           </div>
-
-          <div class="row gy-4 mt-5"></div>
         </div>
       </section>
 
       <section>
-        <div class="mt-5 pt-5">
+        <div class="mt-5">
+          <div class="section-title mb-3" data-aos="fade-up">
+            <h1 class="text-center mb-3">I will Attend</h1>
+          </div>
           <div
             class="container d-flex justify-content-center align-items-center register"
+            data-aos="fade-up"
           >
             <form action="/attendee" class="w-100">
-              <h1 class="text-left mb-3">I will attend</h1>
               <input
                 type="text"
                 name="fullname"

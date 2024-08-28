@@ -141,7 +141,7 @@ h6 {
   }
 }
 
-#main{
+#main {
   min-height: calc(100vh - 300px);
 }
 
@@ -635,7 +635,7 @@ section {
 .section-title h1 {
   margin: 0;
   margin: 0;
-  font-size: 4rem;
+  font-size: clamp(1.75rem, 10vw, 3.5rem);
   font-weight: 700;
   font-family: "Poppins", sans-serif;
   color: var(--accent-color);
@@ -718,7 +718,6 @@ section {
 
 #dynamic-text {
   position: relative;
-  text-align: center;
 }
 
 #dynamic-text::before,
@@ -754,16 +753,16 @@ section {
 
 /* bottom one */
 #about-us-bottom {
-  height: 65dvh;
   position: relative;
+  text-align: left;
 }
 
 #about-us-bottom h1 {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
 }
 hr.line {
   border: 1px solid var(--accent-color);
-  margin: 7rem 0;
+  margin: 2em 0;
   left: 0;
   opacity: 1 !important;
 }
@@ -927,7 +926,9 @@ hr.line {
 --------------------------------------------------------------*/
 .clients {
   padding: 20px 0;
-
+}
+.clients h1 {
+  color: var(--accent-color);
 }
 
 .clients .client-logo {
@@ -936,19 +937,17 @@ hr.line {
   align-items: center;
   border-width: 1px 0 0 1px;
   overflow: hidden;
-  border: 1px solid #dee2e6;
+  border: none;
   padding: 20px 0;
-  opacity: .75;
+  opacity: 0.75;
   transition: all 0.3s ease-in;
 }
-
 
 .clients .client-logo:hover {
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   border: 0;
   opacity: 1;
 }
-
 
 .clients .client-logo img {
   padding: 20px 40px;
@@ -1204,7 +1203,6 @@ hr.line {
 }
 
 .team .member {
-  text-align: center;
   width: 300px;
 }
 
@@ -1235,7 +1233,7 @@ hr.line {
 }
 
 .team .member .member-info h1 {
-  font-size: 4rem;
+  font-size: clamp(1.75rem, 3vw, 3.5rem);
 }
 
 .team .member .member-info .matrix {
