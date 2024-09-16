@@ -66,6 +66,11 @@
           text-align: start;
         }
       }
+
+      .form-select,
+      .form-control {
+        box-shadow: none !important;
+      }
     </style>
   </head>
 
@@ -249,7 +254,12 @@
                   />Logo on sponsor area (Backdrop, table cloth and podium)
                 </li>
               </ul>
-              <a href="/signin.html" class="btn btn-get-started"
+              <a
+                href="/signin.html"
+                class="btn btn-get-started sponsor-btn"
+                data-sponsor="Diamond"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
                 >Sponsor Diamond</a
               >
             </div>
@@ -325,7 +335,12 @@
                   />Swag (Shirts, Caps) on sponsor table at event venue
                 </li>
               </ul>
-              <a href="/signin.html" class="btn btn-get-started"
+              <a
+                href="/signin.html"
+                class="btn btn-get-started sponsor-btn"
+                data-sponsor="Gold"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
                 >Sponsor Gold</a
               >
             </div>
@@ -394,7 +409,12 @@
                   events
                 </li>
               </ul>
-              <a href="/signin.html" class="btn btn-get-started"
+              <a
+                href="/signin.html"
+                class="btn btn-get-started sponsor-btn"
+                data-sponsor="Silver"
+                data-bs-toggle="modal"
+                data-bs-target="#sponsorModal"
                 >Sponsor Silver</a
               >
             </div>
@@ -404,6 +424,102 @@
       </section>
     </main>
     <!-- End #main -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="sponsorModal"
+      tabindex="-1"
+      aria-labelledby="sponsorModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sponsorModalLabel">
+              Sponsor Program Form
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="program" class="form-label">Program Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name="program"
+                  id="program"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="amountSponsor" class="form-label"
+                  >Amount Sponsor</label
+                >
+                <input
+                  type="number"
+                  class="form-control"
+                  id="amountSponsor"
+                  name="amount"
+                  placeholder="Enter amount"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="orgName" class="form-label"
+                  >Organisation Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="orgName"
+                  name="name"
+                  placeholder="Enter organisation name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="orgEmail" class="form-label"
+                  >Organisation Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="orgEmail"
+                  name="email"
+                  placeholder="Enter email"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="orgContact" class="form-label"
+                  >Organisation Contact</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="orgContact"
+                  name="contact"
+                  placeholder="Enter contact number"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-get-started w-100">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- ======= Footer ======= -->
 
@@ -442,6 +558,22 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const program = document.getElementById("program");
+
+        const sponsorBtn = document.querySelectorAll(".sponsor-btn");
+        sponsorBtn.forEach((pkg) => {
+          pkg.addEventListener("click", () => {
+            const package = pkg.getAttribute("data-sponsor");
+
+            program.value = package;
+            console.log(program.value);
+          });
+        });
+      });
+    </script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

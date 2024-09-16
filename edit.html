@@ -1,104 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Company Dashboard</title>
-    <style>
-      .container {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-      }
-      h1 {
-        text-align: center;
-        color: #333;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      .section h2 {
-        color: #555;
-      }
-      .section input,
-      .section select {
-        width: 100%;
-        padding: 10px;
-        margin-top: 5px;
-        margin-bottom: 10px;
-        border: 1px solid #ddd;
-        border-radius: 4px;
-      }
-      .section button {
-        padding: 10px 15px;
-        border: none;
-        background-color: #007bff;
-        color: #fff;
-        border-radius: 4px;
-        cursor: pointer;
-      }
-      .section button:hover {
-        background-color: #0056b3;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Company Dashboard</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sponsor Form Modal</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Button to trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sponsorModal">
+      Fill Sponsor Form
+    </button>
 
-      <!-- View Profile Section -->
-      <div class="section" id="view-profile">
-        <h2>View Company Profile</h2>
-        <p><strong>Organization Name:</strong> Example Company</p>
-        <p><strong>Email Address:</strong> contact@example.com</p>
-        <p><strong>Contact Number:</strong> +1234567890</p>
-      </div>
-
-      <!-- Edit Profile Section -->
-      <div class="section" id="edit-profile">
-        <h2>Edit Company Profile</h2>
-        <form action="/update-profile" method="post">
-          <input
-            type="text"
-            name="organization_name"
-            placeholder="Organization Name"
-            value="Example Company"
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value="contact@example.com"
-            required
-          />
-          <input
-            type="text"
-            name="contact_number"
-            placeholder="Contact Number"
-            value="+1234567890"
-            required
-          />
-          <button type="submit">Update Profile</button>
-        </form>
-      </div>
-
-      <!-- Preferred Communication Section -->
-      <div class="section" id="communication-preferences">
-        <h2>Preferred Communication</h2>
-        <form action="/update-communication" method="post">
-          <label for="communication_method">Preferred Method:</label>
-          <select name="communication_method" id="communication_method">
-            <option value="email" selected>Email</option>
-            <option value="phone">Phone</option>
-            <option value="mail">Mail</option>
-          </select>
-          <button type="submit">Update Preferences</button>
-        </form>
+    <!-- Modal -->
+    <div class="modal fade" id="sponsorModal" tabindex="-1" aria-labelledby="sponsorModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="sponsorModalLabel">Sponsor Program Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="programName" class="form-label">Program Name</label>
+                <select class="form-select" id="programName" required>
+                  <option value="" disabled selected>Select program</option>
+                  <option value="diamond">Diamond</option>
+                  <option value="gold">Gold</option>
+                  <option value="silver">Silver</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="amountSponsor" class="form-label">Amount Sponsor</label>
+                <input type="number" class="form-control" id="amountSponsor" placeholder="Enter amount" required>
+              </div>
+              <div class="mb-3">
+                <label for="orgName" class="form-label">Organisation Name</label>
+                <input type="text" class="form-control" id="orgName" placeholder="Enter organisation name" required>
+              </div>
+              <div class="mb-3">
+                <label for="orgEmail" class="form-label">Organisation Email</label>
+                <input type="email" class="form-control" id="orgEmail" placeholder="Enter email" required>
+              </div>
+              <div class="mb-3">
+                <label for="orgContact" class="form-label">Organisation Contact</label>
+                <input type="text" class="form-control" id="orgContact" placeholder="Enter contact number" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
       </div>
     </div>
-  </body>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
