@@ -177,11 +177,12 @@
         <!-- Edit Profile Section -->
         <div class="section" id="edit-profile">
           <h2>Edit Company Profile</h2>
-          <form action="/update-profile">
+          <form id="update-profile">
             <input
               type="text"
-              name="organization_name"
+
               placeholder="Organization Name"
+              name="name"
               value="Example Company"
               required
             />
@@ -194,7 +195,7 @@
             />
             <input
               type="text"
-              name="contact_number"
+              name="phone"
               placeholder="Contact Number"
               value="+1234567890"
               required

@@ -67,6 +67,7 @@
         }
       }
 
+      .btn-close,
       .form-select,
       .form-control {
         box-shadow: none !important;
@@ -447,9 +448,9 @@
             ></button>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="sponsor-form">
               <div class="mb-3">
-                <label for="program" class="form-label">Program Name</label>
+                <label for="program" class="form-label">Sponsoring.</label>
                 <input
                   type="text"
                   class="form-control"
@@ -459,9 +460,7 @@
                 />
               </div>
               <div class="mb-3">
-                <label for="amountSponsor" class="form-label"
-                  >Amount Sponsor</label
-                >
+                <label for="amountSponsor" class="form-label">Amount.</label>
                 <input
                   type="number"
                   class="form-control"
@@ -473,7 +472,7 @@
               </div>
               <div class="mb-3">
                 <label for="orgName" class="form-label"
-                  >Organisation Name</label
+                  >Organisation Name.</label
                 >
                 <input
                   type="text"
@@ -486,7 +485,7 @@
               </div>
               <div class="mb-3">
                 <label for="orgEmail" class="form-label"
-                  >Organisation Email</label
+                  >Organisation Email.</label
                 >
                 <input
                   type="email"
@@ -499,13 +498,13 @@
               </div>
               <div class="mb-3">
                 <label for="orgContact" class="form-label"
-                  >Organisation Contact</label
+                  >Organisation Contact.</label
                 >
                 <input
                   type="text"
                   class="form-control"
                   id="orgContact"
-                  name="contact"
+                  name="phone"
                   placeholder="Enter contact number"
                   required
                 />
@@ -513,7 +512,11 @@
             </form>
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-get-started w-100">
+            <button
+              type="submit"
+              form="sponsor-form"
+              class="btn btn-get-started w-100"
+            >
               Submit
             </button>
           </div>
